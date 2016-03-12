@@ -534,7 +534,6 @@ function LazyPig_OnEvent(event)
 		end
 	
 	elseif(event == "UI_ERROR_MESSAGE") then
-		DEFAULT_CHAT_FRAME:AddMessage(arg1)
 		if(string.find(arg1, "mounted") or string.find(arg1,"shapeshift form") or string.find(arg1, "while silenced")) and LPCONFIG.DISMOUNT then
 			UIErrorsFrame:Clear()
 			LazyPig_Dismount()
